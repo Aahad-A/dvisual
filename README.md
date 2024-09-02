@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Data Analysis Project
 
-## Getting Started
+This project consists of a backend for data analysis and a frontend for visualizing the results. I used Python for the analysis part. 
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Summary**: Provides a statistical summary of the dataset (max, mean, min, stddev, count).
+- **Column Types**: Displays the data types of each column.
+- **Missing Values**: Shows the count of missing values in each column.
+- **Correlation Heatmap**: Generates a heatmap to visualize the correlation between columns.
+- **Correlation Matrix**: Provides a matrix of correlation coefficients.
+- **Feature Importance**: Calculates the importance of each feature in predicting the target variable.
+- **Residuals**: Fits linear and polynomial regression models and plots the residuals.
+- **Histograms**: Plots histograms with the distribution of each column.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the Backend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run the backend for data analysis, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Navigate to the `analysis` directory and run the Python script:
+    ```sh
+    cd analysis
+    python3 main.py
+    ```
 
-## Learn More
+## Running the Frontend
 
-To learn more about Next.js, take a look at the following resources:
+To run the frontend, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Run the frontend using `pnpm` (or an npm alternative):
+    ```sh
+    pnpm dev
+    # or
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deploy on Vercel
+## Dataset Compatibility
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I have tested this project with the following dataset, and all the options work with this data.:
+- [Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I haven't tested many other datasets, so compatibility with other datasets is not guaranteed.
