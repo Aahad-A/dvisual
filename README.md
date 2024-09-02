@@ -17,9 +17,8 @@ This project consists of a backend for data analysis and a frontend for visualiz
 
 To run the backend for data analysis, follow these steps:
 
-Navigate to the `analysis` directory and run the Python script:
-    ```sh
-    cd analysis
+Navigate to the `analysis` directory and run the Python script with:
+    ```
     python3 main.py
     ```
 
