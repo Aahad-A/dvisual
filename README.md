@@ -20,7 +20,7 @@ To run the backend:
 
 Go to the `analysis` directory and run the Python script with:
     
-    ```bash
+    ```
     pip install -r requirements.txt
     python3 main.py
     ```
@@ -29,14 +29,13 @@ Go to the `analysis` directory and run the Python script with:
 ### Running the Frontend
 To run the frontend:
 
-2. Run the frontend using `pnpm` (or an npm alternative):
-    ```sh
-    pnpm dev
-    # or
+Run the frontend using npm:
+   
+    ```
     npm run dev
     ```
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Dataset Compatibility
 
