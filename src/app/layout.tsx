@@ -5,15 +5,11 @@ import { ThemeProvider } from "./components/theme-provider"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Data Analysis App',
-  description: 'Analyze your data with ease',
+  title: 'Data Visualizer',
+  description: 'data analysis and visualization tool',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-gray-950 text-gray-100`}>

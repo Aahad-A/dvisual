@@ -51,14 +51,14 @@ export default function Home() {
     <main className="min-h-screen p-8 md:p-24 bg-gradient-to-b from-gray-900 to-gray-950">
       <Card className="max-w-4xl mx-auto bg-gray-800/50 backdrop-blur-sm border-gray-700">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold text-center text-gray-100">Data Analysis App</CardTitle>
+          <CardTitle className="text-3xl font-bold text-center text-gray-100">Data Visualizer</CardTitle>
         </CardHeader>
         <CardContent className="space-y-8">
           {!analysisResult && <FileUpload onUpload={handleFileUpload} />}
           {isAnalyzing && (
             <div className="flex items-center justify-center space-x-2">
               <Loader2 className="h-6 w-6 animate-spin text-blue-500" />
-              <p className="text-blue-500">Analyzing data...</p>
+              <p className="text-blue-500">Analyzing data, this might take a while...</p>
               {uploadedFile && (
                 <p className="text-gray-400">File: {uploadedFile.name}</p>
               )}

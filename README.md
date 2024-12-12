@@ -1,4 +1,4 @@
-# Data Analysis Project
+# Data Visualizer
 
 This project consists of a backend for data analysis and a frontend for visualizing the results. I used Python for the analysis part. 
 
@@ -13,18 +13,21 @@ This project consists of a backend for data analysis and a frontend for visualiz
 - **Residuals**: Fits linear and polynomial regression models and plots the residuals.
 - **Histograms**: Plots histograms with the distribution of each column.
 
-## Running the Backend
+![Dashboard Overview](public/screenshot.png)
 
-To run the backend for data analysis, follow these steps:
+### Running the Backend
+To run the backend:
 
-Navigate to the `analysis` directory and run the Python script with:
-    ```
+Go to the `analysis` directory and run the Python script with:
+    
+    ```bash
+    pip install -r requirements.txt
     python3 main.py
     ```
 
-## Running the Frontend
 
-To run the frontend, follow these steps:
+### Running the Frontend
+To run the frontend:
 
 2. Run the frontend using `pnpm` (or an npm alternative):
     ```sh
@@ -37,7 +40,7 @@ To run the frontend, follow these steps:
 
 ## Dataset Compatibility
 
-I have tested this project with the following dataset, and all the options work with this data.:
+Tested this project with the following dataset, and all the options work with this file:
 - [Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
-I haven't tested many other datasets, so compatibility with other datasets is not guaranteed.
+I haven't tested many other datasets, this is more of a proof of concept. I think it would be better to first clean the data then use this tool for analysis.
